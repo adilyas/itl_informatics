@@ -2,6 +2,9 @@
 
 using namespace std;
 
+const double pi = 3.1415;
+const double e = 2.718281828459045;
+
 int main() {
     int a;
     cin >> a;
