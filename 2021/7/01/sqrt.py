@@ -1,5 +1,7 @@
-# Эта программа печатает математический корень переменной a(которая в данном случае всегда равна 16)
 import math
 
-a = 16
-print(math.sqrt(a))
+a = int(input())
+b = int(input())
+
+c = math.sqrt(a ** 2 + b ** 2)
+print(c)
