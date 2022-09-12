@@ -1,7 +1,8 @@
 # C++ vs Python
 
 ### [Вывод текста в консоль](#stdout)
-####C++:
+
+#### C++:
 ```
 #include <iostream>
 
@@ -13,7 +14,7 @@ int main() {
 ```
 `out: Hello world`
 
-####Python:
+#### Python:
 ```
 print("Hello world")
 ```
@@ -21,7 +22,7 @@ print("Hello world")
 
 ---
 ### [Переменные и арифметические операции с ними. 1](#vars-1)
-####C++:
+#### C++:
 ```
 #include <iostream>
 
@@ -39,7 +40,7 @@ int main() {
 ```
 `out: a = 7 | b = -4 | c = 5 | d = 12`  
 
-####Python:
+#### Python:
 ```
 a = 7
 c = 5
@@ -52,7 +53,7 @@ print("a = {} | b = {} | c = {} | d = {}\n".format(a, b, c, d))
 
 ---
 ### [Переменные и арифметические операции с ними. 2](#vars-2)
-####C++:
+#### C++:
 ```
 #include <iostream>
 #include <cmath>
@@ -71,7 +72,7 @@ s = 12.56
 sqrt(2) = 1.41421
 ```
 
-####Python:
+#### Python:
 ```
 import math
 pi = 3.14
@@ -86,7 +87,7 @@ sqrt(2) = 1.4142135623730951
 ```
 ---
 ### [Вывод дробных чисел](#precision)
-####C++:
+#### C++:
 ```
 #include <iostream>
 #include <iomanip>
@@ -102,7 +103,7 @@ int main() {
 1/3 = 0.333333333
 ```
 
-####Python:
+#### Python:
 ```
 print("1/3 = %.9f" % (1/3))
 ```
@@ -112,7 +113,7 @@ print("1/3 = %.9f" % (1/3))
 ---
 
 ### [Ввод из консоли](#stdin)
-####C++:
+#### C++:
 ```
 #include <iostream>
 
@@ -138,7 +139,7 @@ div = 2
 mod = 3
 ```
 
-####Python:
+#### Python:
 ```
 a, b = map(int, input().split(' '))
 print("sum = %d" % (a + b))
@@ -159,7 +160,7 @@ mod = 3
 ```
 ---
 ### [Условия](#if)
-####C++:
+#### C++:
 ```
 #include <iostream>
 
@@ -191,7 +192,7 @@ a is greater than b
 a or b is odd
 ```
 
-####Python:
+#### Python:
 ```
 a, b = map(int, input().split(' '))
 
