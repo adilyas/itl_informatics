@@ -1,6 +1,13 @@
 # C++ vs Python
 
-### [Вывод текста в консоль](#stdout)
+- [Вывод текста в консоль](https://github.com/adilyas/itl_informatics/blob/main/8-2/c%2B%2B_vs_python.md#вывод-текста-в-консоль)
+- [Переменные и арифметические операции с ними. 1](https://github.com/adilyas/itl_informatics/blob/main/8-2/c%2B%2B_vs_python.md#переменные-и-арифметические-операции-с-ними-1)
+- [Переменные и арифметические операции с ними. 2](https://github.com/adilyas/itl_informatics/blob/main/8-2/c%2B%2B_vs_python.md#переменные-и-арифметические-операции-с-ними-2)
+- [Вывод дробных чисел](https://github.com/adilyas/itl_informatics/blob/main/8-2/c%2B%2B_vs_python.md#вывод-дробных-чисел)
+- [Ввод из консоли](https://github.com/adilyas/itl_informatics/blob/main/8-2/c%2B%2B_vs_python.md#ввод-из-консоли)
+- [Условия](https://github.com/adilyas/itl_informatics/blob/main/8-2/c%2B%2B_vs_python.md#условия)
+
+### Вывод текста в консоль
 
 #### C++:
 ```
@@ -21,7 +28,7 @@ print("Hello world")
 `out: Hello world`
 
 ---
-### [Переменные и арифметические операции с ними. 1](#vars-1)
+### Переменные и арифметические операции с ними. 1
 #### C++:
 ```
 #include <iostream>
@@ -52,7 +59,7 @@ print("a = {} | b = {} | c = {} | d = {}\n".format(a, b, c, d))
 `out: a = 7 | b = -4 | c = 5 | d = 12`
 
 ---
-### [Переменные и арифметические операции с ними. 2](#vars-2)
+### Переменные и арифметические операции с ними. 2
 #### C++:
 ```
 #include <iostream>
@@ -86,7 +93,7 @@ s = 12.56
 sqrt(2) = 1.4142135623730951
 ```
 ---
-### [Вывод дробных чисел](#precision)
+### Вывод дробных чисел
 #### C++:
 ```
 #include <iostream>
@@ -112,7 +119,7 @@ print("1/3 = %.9f" % (1/3))
 ```
 ---
 
-### [Ввод из консоли](#stdin)
+### Ввод из консоли
 #### C++:
 ```
 #include <iostream>
@@ -159,7 +166,7 @@ div = 2
 mod = 3
 ```
 ---
-### [Условия](#if)
+### Условия
 #### C++:
 ```
 #include <iostream>
