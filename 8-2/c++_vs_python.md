@@ -6,6 +6,11 @@
 - [Вывод дробных чисел](https://github.com/adilyas/itl_informatics/blob/main/8-2/c%2B%2B_vs_python.md#вывод-дробных-чисел)
 - [Ввод из консоли](https://github.com/adilyas/itl_informatics/blob/main/8-2/c%2B%2B_vs_python.md#ввод-из-консоли)
 - [Условия](https://github.com/adilyas/itl_informatics/blob/main/8-2/c%2B%2B_vs_python.md#условия)
+- [Циклы. Вывести числа до 10](https://github.com/adilyas/itl_informatics/blob/main/8-2/c++_vs_python.md#циклы-вывести-числа-до-10)
+- [Создать массив](https://github.com/adilyas/itl_informatics/blob/main/8-2/c++_vs_python.md#создать-массив)
+- [Считать двумерный массив и вывести его в обратном порядке](https://github.com/adilyas/itl_informatics/blob/main/8-2/c++_vs_python.md#считать-двумерный-массив-и-вывести-его-в-обратном-порядке)
+- [Считать строку целиком и перевернуть ее](https://github.com/adilyas/itl_informatics/blob/main/8-2/c++_vs_python.md#считать-строку-целиком-и-перевернуть-ее)
+- [Считать N слов и отсортировать их](https://github.com/adilyas/itl_informatics/blob/main/8-2/c++_vs_python.md#считать-n-слов-и-отсортировать-их)
 
 ### Вывод текста в консоль
 
