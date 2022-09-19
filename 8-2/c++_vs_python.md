@@ -222,3 +222,234 @@ a is greater than b
 a or b is odd
 ```
 ---
+
+
+### Циклы. Вывести числа до 10
+#### C++:
+```
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    for (int i = 0; i < 10; i++) {
+        cout << i << " ";
+    }
+}
+```
+```
+---
+0 1 2 3 4 5 6 7 8 9
+```
+
+#### Python:
+```
+for i in range(10):
+    print(i, end=" ")
+```
+```
+0 1 2 3 4 5 6 7 8 9
+```
+---
+
+
+### Создать массив
+#### C++:
+```
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+    vector<int> a(n, -5);
+    for (int i = 0; i < a.size(); i++) {
+        cout << a[i] << " ";
+    }
+}
+```
+```
+3
+---
+-5 -5 -5
+```
+
+#### Python:
+```
+n = int(input())
+a = [-5] * n
+for x in a:
+    print(x, end=" ")
+```
+```
+3
+---
+-5 -5 -5
+```
+---
+
+
+### Считать двумерный массив и вывести его в обратном порядке
+#### C++:
+```
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int main() {
+    int n, x;
+    cin >> n;
+    vector<vector<int>> a(n, vector<int> (n));
+    for (int i = 0; i < a.size(); i++) {
+        for (int j = 0; j < a[i].size(); j++) {
+            cin >> a[i][j];
+        }
+    }
+    for (int i = a.size() - 1; i >= 0; i--) {
+        for (int j = a[i].size() - 1; j >= 0; j--) {
+            cout << a[i][j] << " ";
+        }
+        cout << endl;
+    }
+}
+```
+```
+3
+1 2 3
+4 5 6
+7 8 9
+---
+9 8 7
+6 5 4
+3 2 1
+```
+
+#### Python:
+```
+n = int(input())
+a = []
+for i in range(n):
+    b = list(map(int, input().split(" ")))
+    a.append(b)
+for i in range(n):
+    for j in range(n):
+        print(a[n - 1 - i][n - 1 - j], end=" ")
+    print("")
+```
+```
+3
+---
+-5 -5 -5
+```
+
+В питоне тоже можно перебирать в цикле значения в обратном порядке следующим образом:
+```
+for i in range(10, 3, -1):
+    print(i, end=" ")
+```
+```
+10 9 8 7 6 5 4
+```
+---
+
+### Считать строку целиком и перевернуть ее
+#### C++:
+```
+#include <algorithm>
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+    string s;
+    getline(cin, s);
+    reverse(s.begin(), s.end());
+    cout << s << endl;
+}
+```
+```
+privet mir!
+---
+!rim tevirp
+```
+
+#### Python:
+```
+s = input()
+s = s[::-1]
+print(s)
+
+```
+```
+privet mir!
+---
+!rim tevirp
+```
+---
+
+
+### Считать N слов и отсортировать их
+#### C++:
+```
+#include <algorithm>
+#include <iostream>
+#include <string>
+#include <vector>
+
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+    vector<string> arr(n);
+    for (int i = 0; i < n; i++) {
+        cin >> arr[i];
+    }
+    sort(arr.begin(), arr.end());
+    for (int i = 0; i < n; i++) {
+        cout << arr[i] << endl;
+    }
+}
+```
+```
+5
+asdf
+saf df -- 124d
+---
+--
+124d
+asdf
+df
+saf
+```
+
+#### Python:
+```
+n = int(input())
+arr = []
+while len(arr) < n:
+    b = input().split(" ")
+    arr.extend(b)
+arr = arr[:n]
+arr.sort()
+for s in arr:
+    print(s)
+```
+```
+5
+asdf
+saf df -- 124d
+---
+--
+124d
+asdf
+df
+saf
+```
+Инструкция cin для string считывает все до пробельных символов (перенос строки также является пробельным символом).
+
+---
