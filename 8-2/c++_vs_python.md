@@ -11,6 +11,8 @@
 - [Считать двумерный массив и вывести его в обратном порядке](https://github.com/adilyas/itl_informatics/blob/main/8-2/c++_vs_python.md#считать-двумерный-массив-и-вывести-его-в-обратном-порядке)
 - [Считать строку целиком и перевернуть ее](https://github.com/adilyas/itl_informatics/blob/main/8-2/c++_vs_python.md#считать-строку-целиком-и-перевернуть-ее)
 - [Считать N слов и отсортировать их](https://github.com/adilyas/itl_informatics/blob/main/8-2/c++_vs_python.md#считать-n-слов-и-отсортировать-их)
+- [Сортировка пар](https://github.com/adilyas/itl_informatics/blob/main/8-2/c++_vs_python.md#сортировка-пар)
+- [Считывание из файла](https://github.com/adilyas/itl_informatics/blob/main/8-2/c++_vs_python.md#считывание-из-файла)
 
 ### Вывод текста в консоль
 
@@ -507,4 +509,116 @@ saf
 ```
 Инструкция cin для string считывает все до пробельных символов (перенос строки также является пробельным символом).
 
+---
+
+### Сортировка пар
+#### C++:
+```
+#include <algorithm>
+#include <iostream>
+#include <vector>
+#include <utility>
+
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+    vector<pair<int, int>> arr(n);
+    for (int i = 0; i < n; i++) {
+        cin >> arr[i].first >> arr[i].second;
+    }
+    sort(arr.begin(), arr.end());
+    for (auto& item : arr) {
+        cout << item.first << " " << item.second << endl;
+    }
+}
+```
+Ввод:
+```
+4
+1 4 
+-1 -1
+0 5
+0 2 
+```
+Вывод:
+```
+-1 -1
+0 2
+0 5
+1 4
+```
+
+#### Python:
+```
+n = int(input())
+arr = []
+for i in range(n):
+    a, b = map(int, input().split(' '))
+    arr.append([a, b])
+arr.sort()
+for x in arr:
+    print("{} {}".format(x[0], x[1]))
+```
+Ввод:
+```
+4
+1 4
+-1 -1
+0 5
+0 2
+```
+Вывод:
+```
+-1 -1
+0 2
+0 5
+1 4
+```
+---
+
+
+### Считывание из файла
+#### C++:
+```
+#include <fstream>
+#include <string>
+
+using namespace std;
+
+ifstream fin("input.txt")
+ofstream fout("output.txt")
+
+int main() {
+    string name;
+    fin >> name;
+    fout << "Hello, " << name << "!" << endl;
+}
+```
+input.txt:
+```
+Lyceum
+```
+output.txt:
+```
+Hello, Lyceum!
+```
+
+#### Python:
+```
+fin = open("input.txt", "r")
+fout = open("output.txt", "w")
+
+name = fin.readline()
+print("Hello, {}!".format(name))
+```
+input.txt:
+```
+Lyceum
+```
+output.txt:
+```
+Hello, Lyceum!
+```
 ---
