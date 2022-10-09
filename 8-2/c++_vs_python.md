@@ -622,3 +622,170 @@ output.txt:
 Hello, Lyceum!
 ```
 ---
+
+### Функции. 1
+#### C++:
+```
+#include <iostream>
+
+using namespace std;
+
+int aplusb(int a, int b) {
+    return a + b;
+}
+
+int main() {
+    cout << aplusb(5, 7) << endl;
+}
+```
+Вывод:
+```
+12
+```
+
+#### Python:
+```
+def aplusb(a, b):
+    return a + b
+    
+print(aplusb(5, 7))
+```
+Вывод:
+```
+12
+```
+---
+
+### Функции. 2
+Сумма n-х чисел в массиве.
+#### C++:
+```
+#include <iostream>
+
+using namespace std;
+
+double sumNth(vector<double>& a, int n) {
+    double sum = 0;
+    for (int i = 0; i < a.size(); ++i) {
+        if ((i + 1) % n == 0) {
+            sum += a[i];
+        }
+    }
+    return sum;
+}
+
+int main() {
+    vector<double> arr = {1.5, -0.5, 0, 0, 2, 1.25};
+    cout << sumNth(arr, 2) << endl;
+}
+```
+Вывод:
+```
+0.75
+```
+
+#### Python:
+```
+def sumNth(a, n):
+    sum = 0
+    for i in range(len(a)):
+        if (i + 1) % n == 0:
+            sum += a[i]
+    return sum
+    
+arr = [1.5, -0.5, 0, 0, 2, 1.25]
+print(sumNth(arr, 2))
+```
+Вывод:
+```
+0.75
+```
+---
+
+### Рекурсия. 1
+#### C++:
+```
+#include <iostream>
+
+using namespace std;
+
+int factorial(int n) {
+    if (n == 1) {
+        return 1;
+    }
+    return n * factorial(n - 1);
+}
+
+int main() {
+    cout << factorial(6) << endl;
+}
+```
+Вывод:
+```
+720
+```
+
+#### Python:
+```
+def factorial(n):
+    if n == 1:
+        return 1
+    return n * factorial(n - 1)
+    
+print(factorial(6))
+```
+Вывод:
+```
+720
+```
+---
+
+### Рекурсия. 2
+N-е число Фибоначчи.
+#### C++:
+```
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+vector<int> f;
+
+int fib(int n) {
+    if (f[n] != -1) {
+        return f[n];
+    }
+    f[n] = fib(n - 1) + fib(n - 2);
+    return f[n];
+}
+
+int main() {
+    f.resize(1000, -1);
+    f[0] = 0;
+    f[1] = 1;
+    cout << fib(20) << endl;
+}
+```
+Вывод:
+```
+6765
+```
+
+#### Python:
+```
+def fib(n):
+    if f[n] != -1:
+        return f[n]
+    f[n] = fib(n - 1) + fib(n - 2)
+    return f[n]
+   
+f = [-1] * 1000
+f[0] = 0
+f[1] = 1
+print(fib(20))
+```
+Вывод:
+```
+6765
+```
+---
