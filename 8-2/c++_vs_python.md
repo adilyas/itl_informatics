@@ -13,6 +13,10 @@
 - [Считать N слов и отсортировать их](https://github.com/adilyas/itl_informatics/blob/main/8-2/c++_vs_python.md#считать-n-слов-и-отсортировать-их)
 - [Сортировка пар](https://github.com/adilyas/itl_informatics/blob/main/8-2/c++_vs_python.md#сортировка-пар)
 - [Считывание из файла](https://github.com/adilyas/itl_informatics/blob/main/8-2/c++_vs_python.md#считывание-из-файла)
+- [Функции. 1](https://github.com/adilyas/itl_informatics/blob/main/8-2/c++_vs_python.md#функции-1)
+- [Функции. 2](https://github.com/adilyas/itl_informatics/blob/main/8-2/c++_vs_python.md#функции-2)
+- [Рекурсия. 1](https://github.com/adilyas/itl_informatics/blob/main/8-2/c++_vs_python.md#рекурсия-1)
+- [Рекурсия. 2](https://github.com/adilyas/itl_informatics/blob/main/8-2/c++_vs_python.md#рекурсия-2)
 
 ### Вывод текста в консоль
 
