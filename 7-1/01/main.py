@@ -1,6 +1,6 @@
 print("Hello world")
-
 print("Hi", "!")
+print("Hello\n world")
 
 print("foo", end="")
 print("bar")
@@ -18,7 +18,7 @@ print("42" * 3)
 print(int("42") * 4)
 print(str(42) * 4)
 
-print(3 - 1)
+print(3 - 7)
 
 print(5 ** 2)
 print(9 ** (1/2))
